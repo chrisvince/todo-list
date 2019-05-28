@@ -1,0 +1,101 @@
+@import './variables';
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	letter-spacing: .08em;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	
+	&.slim {
+		max-width: 700px;
+	}
+}
+
+.appHeaderContainer {
+	background: $color-brand;
+	padding-top: 5px;
+	padding-bottom: 30px;
+}
+
+h1 {
+	font-weight: 800;
+	font-size: 28px;
+}
+
+h2 {
+	font-weight: 400;
+	font-size: 18px;
+}
+
+h4 {
+	font-size: 13px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	letter-spacing: .1em;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.appHeader {
+	text-transform: uppercase;
+	margin-bottom: 50px;
+}
+
+.appHeader, .todoListName {
+	text-align: center;
+	color: #ffffff;
+}
+
+
+// Move to component
+.addTodoGroup {
+	display: flex;
+	justify-content: space-between;
+	background: white;
+	height: 40px;
+	
+	.addTodoField {
+		height: 40px;
+		border: none;
+		flex-grow: 1;
+		padding: 8px 14px;
+		font-size: 14px;
+		outline: none;
+		
+		&::placeholder {
+			color: $text-disabled-color;
+			font-weight: 200;
+		}
+	}
+	
+	.addTodoBtn {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		border: none;
+		cursor: pointer;
+		color: $color-brand;
+		text-transform: uppercase;
+		padding: 0 12px;
+		font-size: 12px;
+		
+		&:hover {
+			color: $color-brand-hover;
+		}
+	}
+}
+
+

@@ -4,21 +4,34 @@ import { addTodo } from '../actions'
 
 const AddTodo = ({ dispatch }) => {
   let input
+  
+  const handleFormSubmit = e => {
+    e.preventDefault()
+    if (!input.value.trim()) {
+      return
+    }
+    dispatch(addTodo(input.value))
+    input.value = ''
+  }
 
   return (
     <div>
-      <form onSubmit={e => {
-        e.preventDefault()
-        if (!input.value.trim()) {
-          return
-        }
-        dispatch(addTodo(input.value))
-        input.value = ''
-      }}>
-        <input ref={node => input = node} />
-        <button type="submit">
-          Add Todo
-        </button>
+      <form onSubmit={handleFormSubmit}>
+        <div
+          className="addTodoGroup"
+        >
+          <input
+            ref={node => input = node}
+            className="addTodoField"
+            placeholder="Add a to-do"
+          />
+          <button
+            type="submit"
+            className="addTodoBtn"
+          >
+            Add
+          </button>
+        </div>
       </form>
     </div>
   )

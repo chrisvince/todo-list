@@ -1,0 +1,24 @@
+@import '../../styles/variables';
+
+$sort-dropdown-font-size: 10px;
+
+.sortDropdown {
+	text-align: right;
+	
+	.sortDropdownLabel {
+		color: $color-brand;
+		font-size: $sort-dropdown-font-size;
+	}
+
+	.sortDropdownSelect {
+		-webkit-appearance: none;
+		-moz-animation: none;
+		border: 0;
+		background: none;
+		color: $color-brand;
+		outline: 0;
+		font-size: $sort-dropdown-font-size;
+		padding-right: 6px;
+	}
+}
+

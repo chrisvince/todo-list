@@ -5,9 +5,8 @@ export const addTodo = text => ({
   text
 })
 
-export const setVisibilityFilter = filter => ({
-  type: 'SET_VISIBILITY_FILTER',
-  filter
+export const toggleShowCompleted = () => ({
+  type: 'TOGGLE_SHOW_COMPLETED'
 })
 
 export const toggleTodo = id => ({
@@ -15,8 +14,8 @@ export const toggleTodo = id => ({
   id
 })
 
-export const VisibilityFilters = {
-  SHOW_ALL: 'SHOW_ALL',
-  SHOW_COMPLETED: 'SHOW_COMPLETED',
-  SHOW_ACTIVE: 'SHOW_ACTIVE'
-}
+export const updateTodoDueDate = (id, dueDate) => ({
+  type: 'UPDATE_TODO_DUE_DATE',
+  id,
+  dueDate
+})

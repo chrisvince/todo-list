@@ -1,0 +1,52 @@
+@import '../../styles/variables';
+
+$date-font-size: 11px;
+
+.CalendarDay__selected {
+  background: $color-brand;
+  color: white;
+  border: 1px solid $color-brand;
+}
+
+.CalendarDay__selected:hover {
+  background: $color-brand;
+  border: 1px solid $color-brand;
+}
+
+.CalendarDay__default:not(.CalendarDay__blocked_out_of_range):hover {
+  background: $color-brand;
+  color: white;
+  border: 1px solid $color-brand;
+}
+
+.DateInput_input {
+	padding: 0;
+	cursor: pointer;
+  border-bottom: none;
+  text-align: right;
+  color: $text-color;
+  font-size: $date-font-size;
+  height: 23px;  
+}
+
+.SingleDatePickerInput_calendarIcon {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+.DateInput_input__disabled,
+.SingleDatePickerInput__disabled,
+.DateInput__disabled {
+  background: none;
+}
+
+.DateInput_input__disabled {
+  font-style: normal;
+  color: $text-disabled-color;
+}
+
+.DateInput {
+  margin-right: 8px;
+  width: auto;
+}

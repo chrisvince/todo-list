@@ -107,5 +107,4 @@ describe('todos reducer', () => {
       }
     ])
   })
-
 })

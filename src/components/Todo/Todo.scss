@@ -1,0 +1,35 @@
+@import '../../styles/variables';
+
+.todoListItem {
+	border-bottom: 1px solid $color-border;
+	
+	input[type=checkbox] {
+		display: none;
+	}
+	
+	.classtodoItemWrap {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 38px;
+		margin-left: -24px;
+	}
+	
+	.todoCheckboxSection, .checkbox {
+		display: flex;
+		align-items: center;
+	}
+	
+	.checkbox {
+		margin-right: 8px;
+	}
+	
+	.todoLabel {
+		color: $text-color;
+		font-size: 12px;
+		
+		&.completed {
+			text-decoration: line-through;
+		}
+	}
+}

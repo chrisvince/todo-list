@@ -1,0 +1,23 @@
+@import '../../styles/variables';
+
+.todoListSection {
+	margin-top: 30px;
+}
+
+.todoList {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	
+}
+
+.todoListHeading {
+	color: $color-brand;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.todoListHeader {
+	display: flex;
+	justify-content: space-between;
+}
