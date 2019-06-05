@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import FilteredTodoList from './FilteredTodoList'
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = state => ({
   showCompleted: state.toggleShowCompleted,
   children: `${state.toggleShowCompleted ? 'Hide' : 'Show'} Completed Tasks`
 })
