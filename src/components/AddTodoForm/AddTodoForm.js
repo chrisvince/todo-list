@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 
 const propTypes = {
@@ -6,11 +6,8 @@ const propTypes = {
 }
 
 const AddTodoForm = props => {
+	const { addTodo } = props
 	let input
-	
-	const {
-		addTodo
-	} = props
 	
 	const handleFormSubmit = e => {
 		e.preventDefault()
